@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body, div, article, aside, footer, header, main, nav, section, ul, ol, li, button, figure, picture, hr, form {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  flex-direction: column;
+  font-family: 'Manrope', sans-serif;
+  font-weight: normal;
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    outline: none;
+  }
+
+  main {
+    background-color: var(--bg-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    position: relative;
+
+    .full-banner-home {
+      justify-content: center;
+    }
+
+    .wave-blue {
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      left: 0;
+      width: 100%;
+      z-index: 3;
+    }
+  }
+
+  /* .menu-overlay {
+    z-index: 0;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+  }
+  &.open {
+      overflow: hidden;
+      .menu-overlay {
+          opacity: 1;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+          background-color: var(--main-30);
+          z-index: 5;
+      }
+  } */
+}
+
+@media (min-width: 1000px) {
+  body {
+    main {
+      padding-bottom: 250px;
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    main {
+      .wave-blue {
+        bottom: -80px;
+      }
+    }
+  }
+}

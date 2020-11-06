@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Virabrequim</title>
+    <meta name="description" content="Preze pela qualidade do seu veículo, e venha a melhor mecânica do Brasil!">
+    <meta name="msapplication-TileColor" content="#5A96D5">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#5A96D5">
+    <link rel="preload" href="assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+</head>
+<body>
+
+  <header id="login-header">
+    <div class="menu">
+      <a href="index.html#" class="logo">
+        <p>Virabrequim</p>
+      </a>
+
+      <button class="btn-open" aria-label="botão para abrir menu mobile" >
+        <svg id="menu_3_" data-name="menu (3)" xmlns="http://www.w3.org/2000/svg" width="27.85" height="20.114" viewBox="0 0 27.85 20.114">
+          <path id="Caminho_206" data-name="Caminho 206" d="M26.689,124.989H1.16a1.16,1.16,0,1,1,0-2.321H26.689a1.16,1.16,0,1,1,0,2.321Zm0,0" transform="translate(0 -113.771)" fill="#f8f5ff"/>
+          <path id="Caminho_207" data-name="Caminho 207" d="M26.689,2.321H1.16A1.16,1.16,0,0,1,1.16,0H26.689a1.16,1.16,0,0,1,0,2.321Zm0,0" fill="#f8f5ff"/>
+          <path id="Caminho_208" data-name="Caminho 208" d="M26.689,247.653H1.16a1.16,1.16,0,1,1,0-2.321H26.689a1.16,1.16,0,1,1,0,2.321Zm0,0" transform="translate(0 -227.539)" fill="#f8f5ff"/>
+        </svg>
+      </button>
+
+      <button class="btn-open" id="main" aria-label="botão para abrir menu mobile" >
+        <svg id="menu_3_" data-name="menu (3)" xmlns="http://www.w3.org/2000/svg" width="27.85" height="20.114" viewBox="0 0 27.85 20.114">
+          <path id="Caminho_206" data-name="Caminho 206" d="M26.689,124.989H1.16a1.16,1.16,0,1,1,0-2.321H26.689a1.16,1.16,0,1,1,0,2.321Zm0,0" transform="translate(0 -113.771)" fill="#FF5B69"/>
+          <path id="Caminho_207" data-name="Caminho 207" d="M26.689,2.321H1.16A1.16,1.16,0,0,1,1.16,0H26.689a1.16,1.16,0,0,1,0,2.321Zm0,0" fill="#FF5B69"/>
+          <path id="Caminho_208" data-name="Caminho 208" d="M26.689,247.653H1.16a1.16,1.16,0,1,1,0-2.321H26.689a1.16,1.16,0,1,1,0,2.321Zm0,0" transform="translate(0 -227.539)" fill="#FF5B69"/>
+        </svg>
+      </button>
+
+      <button class="btn-close" aria-label="botão para fechar menu mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0,0H24V24H0Z" fill="none"/><path d="M19,6.41,17.59,5,12,10.59,6.41,5,5,6.41,10.59,12,5,17.59,6.41,19,12,13.41,17.59,19,19,17.59,13.41,12Z"/></svg>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="index.html#about">Sobre</a></li>
+          <li><a href="products.html">Produtos</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <a id="login" href="register.html">Cadastro</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-page"> 
+    <section class="login-section">
+      <form action="success-login.html">
+        <div class="text">
+          <h1>Login</h1>
+          <p>Faça seu login para acessar a area privada e as configurações.</p>
+        </div>
+        <div class="fields">
+          <div class="field">
+            <input type="text" id="email" name="email" required />
+            <label for="email">E-mail</label>
+          </div>
+          <div class="field">
+            <input type="password" id="password" name="password" required />
+            <label for="password">Senha</label>
+          </div>
+          <div class="button">
+            <button type="submit" class="button">Entrar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <img class="wave-blue" src="assets/images/wave-blue.svg" alt="Imagem de onda para separação">
+  </main>
+
+  <footer id="login-footer">
+    <a href="login.html#" class="arrow-up">
+      <img src="assets/images/icons/arrow-up.svg" alt="Arrow up">
+    </a>
+    <div class="container">
+      <div class="text">
+        <h5>Virabrequim</h5>
+        <ul>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="index.html#about">Sobre</a></li>
+          <li><a href="products.html">Produtos</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>© 2020 Virabrequim. All rights reserved.</p>
+        <div class="social">
+          <img src="assets/images/icons/facebook.svg" alt="Facebook">
+          <img src="assets/images/icons/twitter.svg" alt="Twitter">
+          <img src="assets/images/icons/youtube.svg" alt="Youtube">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

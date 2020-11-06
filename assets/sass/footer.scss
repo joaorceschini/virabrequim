@@ -1,0 +1,128 @@
+footer {
+  width: 100%;
+  position: relative;
+  padding: 0 var(--space);
+  justify-content: center;
+  background: var(--third);
+
+  .arrow-up {
+    position: absolute;
+    background-color: var(--main);
+    top: -20px;
+    right: var(--space);
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    z-index: 5;
+    height: 250px;
+    background: transparent;
+    justify-content: space-between;
+    padding: 0 var(--space);
+
+    .text {
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      h5 {
+        font-size: 35px;
+        margin: 0;
+        color: var(--white);
+      }
+      ul {
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 0 10px;
+
+          a {
+            color: var(--text-gray);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      margin-bottom: var(--space);
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        color: var(--text-gray);
+        opacity: 0.8;
+      }
+
+      img {
+        width: 40px;
+      }
+
+      img + img {
+        margin-left: var(--space);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    .container {
+      .copyright {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .arrow-up {
+      position: absolute;
+      background-color: var(--main);
+      top: -100px;
+      right: var(--space);
+      width: 60px;
+      height: 60px;
+      z-index: 3;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  footer {
+    .container {
+      .copyright {
+        margin: 0 calc(var(--space) * 2) var(--space);
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    .container { max-width: 1200px }
+  }
+}
