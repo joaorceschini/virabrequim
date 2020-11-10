@@ -384,6 +384,7 @@ header .menu.open nav a#login {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: var(--space);
 }
 #home .service-home .text h2 {
   font-size: 30px;
@@ -1574,6 +1575,46 @@ footer .container .copyright img + img {
 @media (min-width: 1200px) {
   footer .container {
     max-width: 1200px;
+  }
+}
+#success-header .menu .logo p {
+  color: var(--main);
+}
+#success-header .menu nav ul li a {
+  color: var(--main);
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+#success-header .menu nav ul li a:hover {
+  opacity: 1;
+}
+#success-header .menu nav a#login {
+  background-color: var(--second);
+}
+
+#success {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, #ffffff, #fdfdff, #fbfaff, #faf8ff, #f8f5ff);
+}
+#success section {
+  margin: var(---space);
+}
+#success section .text {
+  align-items: center;
+}
+#success section .text h1 {
+  text-align: center;
+  color: var(--text);
+  font-size: 30px;
+}
+#success section .text h1 strong {
+  color: var(--main);
+}
+
+@media (min-width: 900px) {
+  #success section .text h1 {
+    font-size: 50px;
   }
 }
 
