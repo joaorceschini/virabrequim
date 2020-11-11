@@ -85,13 +85,13 @@
     .all {
       display: grid;
       grid-template-columns: 1fr;
-      cursor: pointer;
 
       .product {
         padding: var(--space);
         flex-direction: column;
         border-radius: var(--border-radius);
         transition: background-color .2s ease-in-out;
+        margin-bottom: calc(var(--space) / 2);
 
         &:hover {
           background-color: #ededed;
@@ -122,6 +122,16 @@
         p {
           color: var(--text);
           font-size: 16px;
+        }
+
+        a {
+          color: var(--second);
+          transition: color .2s ease-in-out;
+          margin-right: auto;
+
+          &:hover {
+            color: var(--third);
+          }
         }
       }
     }
