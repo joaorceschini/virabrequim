@@ -1371,6 +1371,7 @@ header .menu.open nav a#login {
   padding: var(--space);
   flex-direction: column;
   border-radius: var(--border-radius);
+  transition: background-color 0.2s ease-in-out;
 }
 #products .products-section .all .product:hover {
   background-color: #ededed;

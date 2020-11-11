@@ -91,6 +91,7 @@
         padding: var(--space);
         flex-direction: column;
         border-radius: var(--border-radius);
+        transition: background-color .2s ease-in-out;
 
         &:hover {
           background-color: #ededed;
