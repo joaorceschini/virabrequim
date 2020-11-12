@@ -15,6 +15,7 @@ header {
       top: calc(80px - 25px);
       transition: all .4s ease-in-out;
       right: calc(50vw - 86px);
+      z-index: 6;
 
       p {
         margin: 0;
@@ -38,6 +39,7 @@ header {
       background-color: transparent;
       border: none;
       padding: 0;
+      z-index: 6;
 
       svg {
         width: 40px;
@@ -47,6 +49,7 @@ header {
 
     .btn-close {
       display: none;
+      z-index: 6;
     }
 
     nav {
@@ -64,7 +67,7 @@ header {
       flex-direction: column;
       transition: right .4s ease-in-out;
       padding: 40px 10px 0;
-      z-index: 4;
+      z-index: 5;
 
       ul {
         height: 100vh;
@@ -74,7 +77,7 @@ header {
         flex-direction: column;
         padding: 0;
         margin: 0;
-        padding-top: 35vh;
+        padding-top: 28vh;
         overflow-y: auto;
         li {
           align-items: center;
@@ -86,7 +89,7 @@ header {
             padding: 10px;
             text-decoration: none;
             font-size: 16px;
-            color: var(--text-gray);
+            color: var(--dark-gray);
             transition: all .2s ease-in-out;
             &:hover {
               opacity: 0.8;
@@ -101,7 +104,10 @@ header {
         right: calc(300px - 238px);
         padding: 40px 0 0;
         margin: 0;
-        z-index: 5;
+        
+        p {
+          color: var(--main);
+        }
       }
 
       .btn-open {
@@ -120,7 +126,6 @@ header {
         background-color: transparent;
         border: none;
         padding: 0;
-        z-index: 5;
 
         svg {
           width: 50px;

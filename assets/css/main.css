@@ -107,6 +107,7 @@ header .menu .logo {
   top: calc(80px - 25px);
   transition: all 0.4s ease-in-out;
   right: calc(50vw - 86px);
+  z-index: 6;
 }
 header .menu .logo p {
   margin: 0;
@@ -128,6 +129,7 @@ header .menu .btn-open {
   background-color: transparent;
   border: none;
   padding: 0;
+  z-index: 6;
 }
 header .menu .btn-open svg {
   width: 40px;
@@ -135,6 +137,7 @@ header .menu .btn-open svg {
 }
 header .menu .btn-close {
   display: none;
+  z-index: 6;
 }
 header .menu nav {
   list-style: none;
@@ -151,7 +154,7 @@ header .menu nav {
   flex-direction: column;
   transition: right 0.4s ease-in-out;
   padding: 40px 10px 0;
-  z-index: 4;
+  z-index: 5;
 }
 header .menu nav ul {
   height: 100vh;
@@ -161,7 +164,7 @@ header .menu nav ul {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  padding-top: 35vh;
+  padding-top: 28vh;
   overflow-y: auto;
 }
 header .menu nav ul li {
@@ -174,7 +177,7 @@ header .menu nav ul li a {
   padding: 10px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--text-gray);
+  color: var(--dark-gray);
   transition: all 0.2s ease-in-out;
 }
 header .menu nav ul li a:hover {
@@ -184,7 +187,9 @@ header .menu.open .logo {
   right: calc(300px - 238px);
   padding: 40px 0 0;
   margin: 0;
-  z-index: 5;
+}
+header .menu.open .logo p {
+  color: var(--main);
 }
 header .menu.open .btn-open {
   display: none;
@@ -201,7 +206,6 @@ header .menu.open .btn-close {
   background-color: transparent;
   border: none;
   padding: 0;
-  z-index: 5;
 }
 header .menu.open .btn-close svg {
   width: 50px;
@@ -363,7 +367,7 @@ header .menu.open nav a#login {
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 1;
 }
 #home .full-banner-home .hero .image img {
   width: 100%;
