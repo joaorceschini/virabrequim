@@ -1165,7 +1165,7 @@ header .menu.open nav a#login {
 }
 .login-page .login-section {
   margin: var(--space);
-  z-index: 4;
+  z-index: 1;
   margin-bottom: 200px;
 }
 .login-page .login-section form {
