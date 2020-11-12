@@ -77,7 +77,7 @@ body main .wave-blue {
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
 }
 
 @media (min-width: 1000px) {
@@ -116,6 +116,7 @@ header .menu .logo p {
   align-items: center;
   font-weight: bold;
   color: var(--white);
+  transition: color 0.3s ease-in-out;
 }
 header .menu .btn-open {
   position: absolute;
@@ -1020,7 +1021,7 @@ header .menu.open nav a#login {
 }
 #contact .contact-section {
   margin: var(--space);
-  z-index: 4;
+  z-index: 1;
   margin-bottom: 200px;
 }
 #contact .contact-section form {
@@ -1351,7 +1352,7 @@ header .menu.open nav a#login {
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 1;
 }
 #products .full-banner-products .hero .image img {
   width: 100%;
@@ -1538,7 +1539,7 @@ footer .arrow-up {
   right: var(--space);
   width: 50px;
   height: 50px;
-  z-index: 3;
+  z-index: 1;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1551,7 +1552,7 @@ footer .arrow-up img {
 footer .container {
   flex-direction: column;
   width: 100%;
-  z-index: 5;
+  z-index: 1;
   height: 250px;
   background: transparent;
   justify-content: space-between;

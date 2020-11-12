@@ -12,7 +12,7 @@ footer {
     right: var(--space);
     width: 50px;
     height: 50px;
-    z-index: 3;
+    z-index: 1;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@ footer {
   .container {
     flex-direction: column;
     width: 100%;
-    z-index: 5;
+    z-index: 1;
     height: 250px;
     background: transparent;
     justify-content: space-between;
