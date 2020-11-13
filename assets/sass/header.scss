@@ -200,6 +200,10 @@ header {
 
           li {
             opacity: 1;
+
+            a {
+              color: var(--text-gray);
+            }
           }
         }
 

@@ -267,6 +267,9 @@ header .menu.open nav a#login {
   header .menu nav ul li {
     opacity: 1;
   }
+  header .menu nav ul li a {
+    color: var(--text-gray);
+  }
   header .menu nav a#login {
     background-color: var(--main);
     border-radius: var(--border-radius);
@@ -711,7 +714,7 @@ header .menu.open nav a#login {
   width: 100%;
   align-items: center;
   justify-content: center;
-  z-index: 4;
+  z-index: 1;
 }
 #services .full-banner-services .hero .image img {
   width: 100%;
@@ -845,6 +848,9 @@ header .menu.open nav a#login {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 var(--space);
+}
+#services .schedule form .fields .wrap .field .input {
+  min-height: 53px;
 }
 #services .schedule form .fields .field {
   position: relative;
